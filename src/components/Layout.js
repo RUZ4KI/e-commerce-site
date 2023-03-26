@@ -10,6 +10,7 @@ export const Layout = () => {
         marginRight: 'auto',
         marginLeft: 'auto',
         padding: '0 2rem',
+        background: 'rgb(250, 250, 250)',
       }}>
           <Header />
           <Outlet/>

@@ -33,10 +33,10 @@ export const Card = ({ data, key }) => {
                 <img src={data?.image} height="240px" width="240px" alt="" />
                 </NavLink>
                 <div style={{width: '240px'}}>              
-                <div>{data?.title}</div>
-                <div>{`Price: ${data?.price}`}</div>
-                <div>{`Category: ${data?.category}`}</div>
-                <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+                <div style={{fontSize: '16px'}}>{data?.title}</div>
+                <div style={{fontSize: '14px'}}>{`Price: ${data?.price}`}</div>
+                <div style={{fontSize: '14px'}}>{`Category: ${data?.category}`}</div>
+                <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: '10px', alignItems: 'center'}}>
                     <HiShoppingCart style={{cursor: 'pointer'}} onClick={handleAddToCart} />
                     <Input
                         quantity={quantity}

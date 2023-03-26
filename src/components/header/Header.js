@@ -8,7 +8,8 @@ export const Header = () => {
     const { cartQuantity } = useContext(CartContext)
     
     return (
-      <div style={{  width: '100%',
+      <div style={{
+        width: '100%',
         height: '6.5rem',
         background: 'rgb(250, 250, 250)',
         display: 'flex',
@@ -35,8 +36,8 @@ export const Header = () => {
             <div>
             <NavLink to="/cart">
                 <div>
-                    {cartQuantity >= 1 && <span>{cartQuantity}</span>}
-                    <HiShoppingCart />
+                    <HiShoppingCart color='black' />
+                    {cartQuantity >= 1 && <span style={{fontSize: '10px', color: 'black'}}>{cartQuantity}</span>}
                 </div>
             </NavLink>    
             </div>
