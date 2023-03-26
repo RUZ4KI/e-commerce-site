@@ -45,6 +45,6 @@ export const Card = ({ data, key }) => {
                     />
                 </div>
                 </div>
-            </div>
+        </div>
   )
 }

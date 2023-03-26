@@ -29,8 +29,8 @@ export const Grid = () => {
     }
     return (
       <div>            
-            <h1>Products</h1>
-            <div>
+            <h1 style={{marginBottom: '20px'}}>Products</h1>
+            <div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gridTemplateRows: '400px 400px', gap: '50px'}}>
             {data.map((item) => <Card data={item} key={item.id}/>)}
             </div>
       </div>
